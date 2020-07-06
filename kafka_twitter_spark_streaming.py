@@ -2,34 +2,6 @@ from pyspark import SparkContext
 import json
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
-#
-#sc = SparkContext('local')
-#spark = SparkSession(sc)
-#
-#df = spark \
-#  .readStream \
-#  .format("kafka") \
-#  .option("kafka.bootstrap.servers", "localhost:9092") \
-#  .option("subscribe", "twitter") \
-#  .option("startingOffsets", "earliest") \
-#  .option("inferSchema", "true") \
-#  .load()
-#
-#opdf = df \
-#  .writeStream \
-#  .format("memory") \
-#  .outputMode("append") \
-#  .queryName("tweets") \
-#  .start()
-#
-#
-#tweets = spark.sql("select cast(key as string), cast(value as string) from tweets")
-#print(tweets.show())
-#
-#opdf.awaitTermination()
-
-#query.awaitTermination()
-
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
